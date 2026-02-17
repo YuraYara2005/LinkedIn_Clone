@@ -1,0 +1,123 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0" version="27.0.3">
+  <diagram name="Page-1" id="4LLj2lhnPenX6NQoD9Ye">
+    <mxGraphModel dx="1930" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-1" value=":Database" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="827" y="40" width="100" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-5" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1PQjf6OdNpZ9_1Hfq5qP-1" vertex="1">
+          <mxGeometry x="45" y="95" width="10" height="275" as="geometry" />
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-2" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" parent="1" vertex="1">
+          <mxGeometry x="30" y="40" width="20" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-3" value=":App" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="270" y="40" width="100" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-4" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1PQjf6OdNpZ9_1Hfq5qP-3" vertex="1">
+          <mxGeometry x="45" y="50" width="10" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-6" value=":AppServer" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="550" y="40" width="100" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-7" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1PQjf6OdNpZ9_1Hfq5qP-6" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-8" value="User" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="15" y="70" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-9" value="submitJobApplication(jobId, resume, coverLetter)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="1PQjf6OdNpZ9_1Hfq5qP-2" edge="1">
+          <mxGeometry x="-0.0022" width="80" relative="1" as="geometry">
+            <mxPoint x="84.5" y="110" as="sourcePoint" />
+            <mxPoint x="315" y="110" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-10" value="proccessApplication(jobId, resume, coverLetter)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="0.0095" width="80" relative="1" as="geometry">
+            <mxPoint x="325" y="128.89" as="sourcePoint" />
+            <mxPoint x="599.5" y="128.89" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-11" value="validateApplication(jobId, resume, coverLetter)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="0.0028" width="80" relative="1" as="geometry">
+            <mxPoint x="605.0000000000002" y="149.44" as="sourcePoint" />
+            <mxPoint x="876.5" y="149.44" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-12" value="ValidationResult(failure)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" target="1PQjf6OdNpZ9_1Hfq5qP-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="200" as="sourcePoint" />
+            <mxPoint x="660" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-13" value="applicatipnSuccessful()" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="0.003" relative="1" as="geometry">
+            <mxPoint x="595" y="410" as="sourcePoint" />
+            <mxPoint x="319.07142857142867" y="410" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-14" value="displayConfirmation(&quot;Application submitted&quot;)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="0.003" relative="1" as="geometry">
+            <mxPoint x="315" y="440" as="sourcePoint" />
+            <mxPoint x="39.07142857142867" y="440" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-15" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+          <mxGeometry x="10" y="170" width="910" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-17" value="validationFailed()" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" target="1PQjf6OdNpZ9_1Hfq5qP-3" edge="1">
+          <mxGeometry x="0.003" relative="1" as="geometry">
+            <mxPoint x="595" y="230" as="sourcePoint" />
+            <mxPoint x="379.9999999999999" y="230" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-18" value="displayError(&quot;Invalid application details&quot;)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" target="1PQjf6OdNpZ9_1Hfq5qP-2" edge="1">
+          <mxGeometry x="0.003" relative="1" as="geometry">
+            <mxPoint x="315" y="260" as="sourcePoint" />
+            <mxPoint x="80" y="260" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-19" value="ValidationResult(success)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="290" as="sourcePoint" />
+            <mxPoint x="609" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-20" value="storeApplication(jobId, resume, coverLetter)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="0.0028" width="80" relative="1" as="geometry">
+            <mxPoint x="610.0000000000002" y="330" as="sourcePoint" />
+            <mxPoint x="881.5" y="330" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-21" value="storageSucess()" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="871" y="370" as="sourcePoint" />
+            <mxPoint x="600" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-22" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=-0.003;exitY=0.336;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.997;entryY=0.325;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="1PQjf6OdNpZ9_1Hfq5qP-15" target="1PQjf6OdNpZ9_1Hfq5qP-15" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="350" as="sourcePoint" />
+            <mxPoint x="320" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-23" value="[application details valid]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-5" y="200" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1PQjf6OdNpZ9_1Hfq5qP-24" value="[application details invalid]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-10" y="280" width="160" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

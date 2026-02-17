@@ -1,0 +1,427 @@
+/* LinkedIn Clone Custom Styles */
+
+/* Global Styles */
+:root {
+    --primary-color: #0A66C2;
+    --secondary-color: #057642;
+    --light-color: #f3f2ef;
+    --dark-color: #333333;
+    --success-color: #057642;
+    --danger-color: #cb2431;
+    --warning-color: #f5c400;
+    --gray-color: #86888a;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.5;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #004182;
+    border-color: #004182;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Card Styles */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Card */
+.profile-card {
+    position: relative;
+}
+
+.profile-cover {
+    height: 200px;
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 125px;
+    z-index: 1;
+    background-color: white;
+    object-fit: cover;
+}
+
+.profile-info {
+    padding-top: 85px;
+    text-align: center;
+}
+
+/* Post Card */
+.post-card {
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.post-media {
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.post-action {
+    display: flex;
+    align-items: center;
+    color: var(--gray-color);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.post-action:hover {
+    color: var(--primary-color);
+}
+
+.post-action i {
+    margin-right: 5px;
+}
+
+/* Comment Styles */
+.comment {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.comment-content {
+    background-color: #f0f2f5;
+    padding: 10px 15px;
+    border-radius: 18px;
+    flex-grow: 1;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Job Card */
+.job-card {
+    margin-bottom: 20px;
+}
+
+.job-title {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.job-company {
+    font-weight: 500;
+}
+
+.job-location, .job-posted-date {
+    color: var(--gray-color);
+    font-size: 0.9rem;
+}
+
+/* Connection Card */
+.connection-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.connection-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.connection-info {
+    flex-grow: 1;
+}
+
+.connection-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.connection-headline {
+    color: var(--gray-color);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+/* Group Card */
+.group-card {
+    margin-bottom: 20px;
+}
+
+.group-cover {
+    height: 120px;
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.group-name {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.group-member-count {
+    color: var(--gray-color);
+    font-size: 0.9rem;
+}
+
+/* Notification Item */
+.notification-item {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.notification-unread {
+    background-color: #e6f7ff;
+}
+
+.notification-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    margin-right: 15px;
+}
+
+.notification-content {
+    flex-grow: 1;
+}
+
+.notification-time {
+    color: var(--gray-color);
+    font-size: 0.8rem;
+}
+
+.notification-actions {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(10, 102, 194, 0.25);
+}
+
+/* Premium Badge */
+.premium-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e7a600;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.premium-badge i {
+    margin-right: 3px;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-pic {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.post-avatar {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-avatar div {
+    width: 48px;
+    height: 48px;
+    background: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-avatar i {
+    font-size: 24px;
+    color: #6c757d;
+}
+
+.post-media {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.post-card {
+    border: none;
+    border-radius: 8px;
+}
+
+.post-actions .btn {
+    font-size: 14px;
+}
+
+.post-stats {
+    font-size: 14px;
+}
+
+.post-content p {
+    margin-bottom: 0;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+.post-header .dropdown {
+    margin-left: auto;
+}
+
+/* Responsive Sidebar */
+@media (min-width: 992px) {
+    .sidebar-sticky {
+        position: sticky;
+        top: 5rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slide-up {
+    animation: slideUp 0.5s ease-in-out;
+}
+
+/* Transition for hover effects */
+.btn, .nav-link, .card, .dropdown-item {
+    transition: all 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
